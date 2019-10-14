@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: rgb(247, 7, 79);
+}
+
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(54, 10, 158);   
+}
+
+
+span {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: rgb(247, 7, 79);
+}
+
+
+ul {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: rgb(245, 50, 186);
+}
+
+
+a {
+    color: rgb(245, 50, 186);
+}
