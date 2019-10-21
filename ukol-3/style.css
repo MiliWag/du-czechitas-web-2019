@@ -1,71 +1,71 @@
-                            * {
-                                box-sizing: border-box;
-                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                            }
-                            
-                            .nadpis {
-                                font-style: italic;
-                                font-weight: normal;
-                                font-size: 1rem;
-                                line-height: 1.5rem;
-                                color: rgb(238, 77, 112);
-                            }
-                            
-                            .odstavecA {
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 1rem;
-                                line-height: 1.5rem;
-                                color: rgb(3, 0, 10);
-                            }
-                            
-                            .odstavecB {
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 1rem;
-                                line-height: 1.5rem;
-                                color: rgb(3, 0, 10);
-                            }
-                            
-                            .important {
-                                font-style: italic;
-                                color: rgb(238, 77, 112);
-                            }
-                            
-                            .tabulka {
-                                font-style: italic;
-                                font-weight: bold;
-                            }
-                            
-                            table tr:nth-child(2n+1) {
-                                color: rgb(238, 77, 112);
-                                background: rgb(199, 198, 198);
-                            }
-                            
-                            table tr:nth-child(2n) {
-                                color: rgb(199, 198, 198);
-                                background: rgb(238, 77, 112);
-                            }
-                            
-                            main a {
-                                font-style: italic;
-                                text-decoration: none
-                            }
-                            
-                            main a:link {
-                                color: rgb(238, 77, 112);
-                            }
-                            
-                            main a:visited {
-                                color: rgb(19, 7, 131);
-                            }
-                            
-                            main a:hover {
-                                color: rgb(71, 141, 94);
-                                text-decoration: underline
-                            }
-                            
-                            main a:focus {
-                                color: rgb(8, 8, 8);
-                                text-decoration: underline
-                            }
+  * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .headline {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: rgb(238, 77, 112);
+  }
+  
+  .paragraph-a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: rgb(3, 0, 10);
+  }
+  
+  .paragraph-b {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: rgb(3, 0, 10);
+  }
+  
+  .important {
+      font-style: italic;
+      color: rgb(238, 77, 112);
+  }
+  
+  .my-table {
+      font-style: italic;
+      font-weight: bold;
+  }
+  
+  table tr:nth-child(2n+1) {
+      color: rgb(238, 77, 112);
+      background: rgb(199, 198, 198);
+  }
+  
+  table tr:nth-child(2n) {
+      color: rgb(199, 198, 198);
+      background: rgb(238, 77, 112);
+  }
+  
+  main a {
+      font-style: italic;
+      text-decoration: none
+  }
+  
+  main a:link {
+      color: rgb(238, 77, 112);
+  }
+  
+  main a:visited {
+      color: rgb(19, 7, 131);
+  }
+  
+  main a:hover {
+      color: rgb(71, 141, 94);
+      text-decoration: underline
+  }
+  
+  main a:focus {
+      color: rgb(8, 8, 8);
+      text-decoration: underline
+  }
