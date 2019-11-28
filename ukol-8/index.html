@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mobilní aplikace</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="images/telefon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="obal">
+        <!-- tvoje HTML sem -->
+        <header class="my-header"><a class="header-headline" href="#">super appka </a><button id="navbarToggler"><span
+                    class="navbar-toggler-icon"><img class="hamburger-menu"
+                        src="images/menu-alt-512.png"></span></button>
+            <nav class="menu">
+                <div id="navbar" class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Úžasný design <img
+                                    src="images/hand_left.jpg"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Boží funkce <img
+                                    src="images/hand_left.jpg"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Zdarma ke stažení <img
+                                    src="images/hand_left.jpg"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="main-information"><img class="logo" src="images/telefon.png">
+                    <h1 class="main-headline">Supper Appka</h1>
+                    <p class="second-headline">Úžasná mobilní aplikace,
+                        <br>která Ti změní život</p>
+                    <div class="links"><a class="button-download" href="#">Stáhnout zdarma</a><a class="button-information" href="#">Více informací</a></div>
+                </div>
+            </section>
+            <section>
+                <div class="section">
+                    <div class="first-section"><img src="images/letadlo.svg">
+                        <h3>Cestuj po světě</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+                    </div>
+                    <div class="second-section"><img src="images/bubliny.svg">
+                        <h3>Chatuj s přáteli</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+                    </div>
+                    <div class="third-section"><img src="images/mapa.svg">
+                        <h3>Zažij dobrodružství</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis corporis ipsa eveniet deleniti.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-copyright">&copy; 2016, Web od A do Z </div>
+        </footer>
+    </div>
+    <script>
+        (function() {
+
+            let navbarToggler = document.querySelector('#navbarToggler')
+            let navbar = document.querySelector('#navbar')
+            console.log('tlacitko', navbarToggler)
+            console.log('navigace', navbar)
+
+            navbarToggler.addEventListener('click', function(e) {
+                navbar.classList.toggle('menu-show')
+                e.stopPropagation()
+                console.log('kliknuto')
+            })
+
+            document.addEventListener('click', function() {
+                navbar.classList.remove('menu-show')
+            })
+
+            document.addEventListener('keydown', function(e) {
+                if (e.keyCode === 27) {
+                    // 27 je escape
+                    navbar.classList.remove('menu-show')
+                }
+            })
+        })()
+    </script>
+    <!-- konec .obal -->
+</body>
+
+</html>

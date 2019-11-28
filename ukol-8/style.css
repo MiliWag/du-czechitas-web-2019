@@ -1,0 +1,278 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    max-width: 960px;
+    /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+a {
+    text-decoration: none;
+}
+
+.my-header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+.header-headline {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #25133d;
+}
+
+button {
+    visibility: hidden;
+}
+
+.hamburger-menu {
+    width: 25px;
+}
+
+.menu {
+    justify-content: start;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.menu a {
+    color: #25133d;
+    transition: color 1s ease 200ms;
+}
+
+.menu img {
+    width: 25px;
+    visibility: hidden;
+    transition: visibility 500ms ease 100ms;
+}
+
+.menu a:hover {
+    color: rgb(194, 60, 105);
+}
+
+.menu a:hover img {
+    visibility: visible;
+}
+
+.main-information {
+    background-color: #48418e;
+    background-image: url("images/pozadi.jpg");
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+}
+
+.background {
+    width: 100%;
+}
+
+.main-headline {
+    font-size: 5rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.second-headline {
+    font-size: 2.2rem;
+    font-weight: lighter;
+    margin-top: 0;
+    line-height: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.button-download {
+    background-color: #48418e;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-right: 2rem;
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.button-information {
+    background-color: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.links a {
+    transition: background-color 1s ease 300ms;
+    transition: transform 300ms ease 300ms;
+}
+
+.links a:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    transform: scale(1.1);
+    color: #48418e;
+}
+
+h3 {
+    color: #48418e;
+}
+
+.section {
+    display: flex;
+    padding: 2rem;
+}
+
+.first-section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.second-section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.third-section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.section img {
+    width: 65px;
+}
+
+.footer-copyright {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #48418e;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:950px) {
+    .section {
+        display: inline-block;
+        padding: 1rem;
+    }
+    .logo {
+        visibility: hidden;
+    }
+    .links {
+        flex-flow: column;
+    }
+    .links a {
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        visibility: visible;
+        margin-left: auto;
+    }
+    .my-header {
+        padding: 1rem;
+        margin: auto;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-show {
+        display: block !important;
+        width: 100%;
+    }
+    .main-headline {
+        font-size: 4rem;
+        margin-bottom: 0rem;
+    }
+    .second-headline {
+        font-size: 2rem;
+        font-weight: lighter;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .links a {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu a:hover img {
+        visibility: hidden;
+    }
+    .links {
+        width: 100%;
+    }
+}
