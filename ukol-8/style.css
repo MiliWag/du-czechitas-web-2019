@@ -260,11 +260,14 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            border: solid #e5e5e5;
+            border-width: 1px 0px 0px 0px;
         }
         .nav-item {
             margin: 0;
             padding: 0;
             flex-basis: 100%;
+            border-bottom: solid 1px #e5e5e5;
         }
         .nav-link {
             padding: 1rem;
@@ -286,9 +289,6 @@
     }
     
     @media (max-width: 500px) {
-        .menu a:hover img {
-            visibility: hidden;
-        }
         .links {
             width: 100%;
         }
