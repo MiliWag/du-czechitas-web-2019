@@ -85,7 +85,7 @@ a {
 }
 
 .menu a:hover {
-    font-weight: bold;
+    color: rgb(194, 60, 105);
 }
 
 .main-information {
@@ -153,7 +153,7 @@ a {
 
 .links a:hover {
     background-color: #25133d;
-    font-weight: bold;
+    box-shadow: #31363b 4px 6px 10px;
 }
 
 h3 {
