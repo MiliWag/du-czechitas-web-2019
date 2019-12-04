@@ -99,6 +99,14 @@ a {
     visibility: visible;
 }
 
+button {
+    visibility: hidden;
+}
+
+.hamburger-menu {
+    width: 25px;
+}
+
 .main-information {
     background-color: #48418e;
     background-image: url("images/pozadi.jpg");
@@ -233,9 +241,6 @@ h3 {
     .my-header {
         padding: 0rem;
         flex-direction: column;
-    }
-    .header-headline {
-        visibility: hidden;
     }
     .menu li {
         padding: 0.5rem;
