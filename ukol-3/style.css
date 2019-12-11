@@ -1,71 +1,57 @@
-  * {
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .headline {
-      font-style: italic;
-      font-weight: normal;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: rgb(238, 77, 112);
-  }
-  
-  .paragraph-a {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: rgb(3, 0, 10);
-  }
-  
-  .paragraph-b {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: rgb(3, 0, 10);
-  }
-  
-  .important {
-      font-style: italic;
-      color: rgb(238, 77, 112);
-  }
-  
-  .my-table {
-      font-style: italic;
-      font-weight: bold;
-  }
-  
-  table tr:nth-child(2n+1) {
-      color: rgb(238, 77, 112);
-      background: rgb(199, 198, 198);
-  }
-  
-  table tr:nth-child(2n) {
-      color: rgb(199, 198, 198);
-      background: rgb(238, 77, 112);
-  }
-  
-  main a {
-      font-style: italic;
-      text-decoration: none
-  }
-  
-  main a:link {
-      color: rgb(238, 77, 112);
-  }
-  
-  main a:visited {
-      color: rgb(19, 7, 131);
-  }
-  
-  main a:hover {
-      color: rgb(71, 141, 94);
-      text-decoration: underline
-  }
-  
-  main a:focus {
-      color: rgb(8, 8, 8);
-      text-decoration: underline
-  }
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(201, 198, 198);
+}
+
+.content {
+    width: 350px;
+    background-color: #31363b;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+
+.information {
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+header {
+    align-items: center;
+}
+
+.my-photo {
+    width: 90%;
+    border-radius: 30% 30% 30% 0%;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.links {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.facebook-icon {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.instagram-icon {
+    width: 50px;
+}
+
+.mail-icon {
+    width: 50px;
+    border-radius: 10px;
+}
